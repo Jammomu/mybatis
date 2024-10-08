@@ -10,4 +10,6 @@ public interface MessageMapper {
 	Message getMessageById(Integer id);
 	void insertMessage(Message message);
 	List<Message> getMessagesLimit10();
+	List<Message> selectWithPaging(int offset, int size);
+	int countTotal();
 }

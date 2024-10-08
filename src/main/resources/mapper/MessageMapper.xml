@@ -10,6 +10,6 @@
     </insert>
     
     <select id="getMessagesLimit10" resultType="com.mysite.sbbmybatis.Message">
-    	SELECT * FROM hello ORDER BY id DESC LIMIT 10;
+    	SELECT * FROM hello ORDER BY id DESC LIMIT 10 OFFSET 10;
     </select>
 </mapper>
